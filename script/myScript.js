@@ -5,6 +5,7 @@ createApp({
   data() {
 
     return {
+      itemsList: 10,
       mails: []
     }
 
@@ -16,7 +17,7 @@ createApp({
 
   mounted() {
   
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < this.itemsList; i++) {
       axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
         .then((risposta) => {
           // console.log(risposta.data.response)

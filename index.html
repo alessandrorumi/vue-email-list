@@ -14,11 +14,10 @@
 
   <div id="app">
 
-    <ul>
+    <ul v-if="mails.length === itemsList">
 
       <li v-for="mail in mails">{{ mail }}</li>
       
-
     </ul>
 
 
